@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignUp</title>
+    <head>  
+
+    <style type = "text/css">
+        label{
+            display:block;}
+    </style>
+    
+    <body>
+    <h2>SignUp</h2>    
+    <form method="post">
+        <label>
+        Username
+        <input type = "text" name = "username" value = "{{username}}">
+        {{username_error}}
+        </label>        
+        <label>
+        Password
+        <input type = "password" name = "password" value = "">
+         {{password_error}}
+        </label>        
+        <label>
+        Verify Password
+        <input type = "password" name = "verify" value = "">
+         {{verify_error}}
+        </label>        
+        <label>
+        Email (optional)
+        <input type = "text" name = "email" value = "{{email}}">
+         {{email_error}}
+        </label>
+        <label>
+        <input type = "submit">
+        </label>        
+    
+    </body>
+<html>

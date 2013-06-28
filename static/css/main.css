@@ -1,0 +1,36 @@
+body {
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+}
+
+.login-area {
+    font-size: 13px;
+    color: gray;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.link {
+    color: gray;
+    text-decoration: none;
+ }
+
+textarea{
+    width: 700px;
+  height: 500px;    
+}
+
+.content{
+    margin-top:100px;
+}
+
+td{
+    padding:20px;
+}

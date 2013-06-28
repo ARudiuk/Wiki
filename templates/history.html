@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+{%block content%}
+<table>
+{% for page in pages%}
+<tr>
+	<td>{{page.created.strftime('%Y-%m-%d %H:%M')}}</td>
+	<td>{{page.content[:120]}}</td>	
+	<td> <a class = "link" href="{{path}}?v={{loop.index0}}">view</a></td>
+	<td> <a class = "link" href="/_edit{{path}}?v={{loop.index0}}">edit</a></td>
+{% endfor %}
+</table>
+{%endblock%}

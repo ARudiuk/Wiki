@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LogIn</title>
+    </head>
+    
+    <style type = "text/css">
+        label{
+            display:block;}
+    </style>
+
+    <body>
+    
+    <h2>LogIn</h2>
+    
+    <form method = "post">
+    
+    <label>
+        Username
+        <input type = "text" name = "username" value = "{{username}}">
+        {{username_error}}
+    </label>        
+    <label>
+        Password
+        <input type = "password" name = "password" value = "">
+         {{password_error}}
+    </label>  
+    <label>
+        <input type = "submit">
+    </label>  
+    
+        <br>        
+        {{error}}
+        
+    </body>
+        
+        
+</html>

@@ -1,0 +1,32 @@
+application: wiki-412
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /images
+  static_dir: static/images
+
+- url: /json
+  static_dir: static/json
+
+- url: /css
+  static_dir: static/css
+
+- url: /crossdomain.xml
+  static_dir: crossdomain.xml
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.1"
+
+- name: jinja2
+  version: latest

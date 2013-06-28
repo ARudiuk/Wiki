@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <title>WikiUd</title>
+</head>
+
+<body>
+  <div class="login-area">
+    {% if user %}
+      <a class = "link" href="/_edit{{path}}">edit</a>
+      |
+      <a class = "link" href ="/_history{{path}}">history</a>
+      |
+      {{user}} (<a class="login-link" href="/logout">logout</a>)
+    {% else %}
+      <a class="link" href="/login">login</a>
+      |
+      <a class="link" href="/signup">signup</a>
+    {% endif %}
+  </div> 
+  <div class = "content"> 
+  {% block content %}
+  {% endblock %}
+  </div>
+
+</body>
+
+</html>
